@@ -157,25 +157,6 @@ describe('Linkify', () => {
 
       expect(tree).toMatchSnapshot();
     });
-
-    it('testing', () => {
-      const tree = renderer
-        .create(<React.Fragment>The React source code is located at <bold>woah</bold></React.Fragment>)
-        .toJSON();
-
-      expect(tree).toMatchSnapshot();
-    });
-
-    // it('should render with default className of Linkify if one is not provided', () => {
-    //   const linkify = ReactTestUtils.renderIntoDocument(<Linkify></Linkify>);
-    //   expect(linkify.props.className).toEqual('Linkify');
-    // });
-
-    // it('should render with a custom className if one is provided', () => {
-    //   const linkify = ReactTestUtils.renderIntoDocument(<Linkify className="custom-class"></Linkify>);
-
-    //   expect(linkify.props.className).toEqual('custom-class');
-    // });
   });
 
   describe('#static', () => {
